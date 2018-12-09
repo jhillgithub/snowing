@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas
+      id="snow"
+      title="Happy Holidays"
+      style="position: fixed; top: 0px; left: 0px; z-index: -1; background-color: transparent;"
+      width="100vw"
+      height="100vh"
+    ></canvas>
+    <script src="snow2.js"></script>
+    <script>
+      window.onload = _snowCanvas({
+        el: document.getElementById("snow"),
+        snowColor: "#cccccc",
+        background: "transparent",
+        maxSpeed: 4,
+        minSpeed: 1.75,
+        width: "",
+        height: "",
+        amount: 115,
+        rMax: 4,
+        rMin: 0.5
+      });
+    </script>
+  </body>
+</html>
